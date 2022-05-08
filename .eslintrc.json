@@ -1,5 +1,12 @@
 {
-    "root": true, // Dont try to get configuration from outside this repo
+    "root": true,
     "parser": "@typescript-eslint/parser",
-    "extends": ["plugin:@typescript-eslint/recommended"]
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ]
 }

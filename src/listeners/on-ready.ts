@@ -1,4 +1,4 @@
-import { ApplicationCommandDataResolvable, Client } from 'discord.js';
+import { Client } from 'discord.js';
 import { SlashCommands } from '../slash-commands';
 
 export const onReady = (client: Client) => {
@@ -9,6 +9,7 @@ export const onReady = (client: Client) => {
       slashCommand.command.toJSON()
     );
 
-    client.application?.commands.set(commands as ApplicationCommandDataResolvable[]);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    client.application?.commands.set(commands as any);
   });
 };

@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write src/**/*.ts",
-    "build": "tsc",
+    "build": "tsc --build",
     "check-types": "tsc-noEmit",
     "dev:main": "nodemon src/main.ts",
     "register-guild-commands": "ts-node src/register-guild-commands.ts",
@@ -22,19 +22,18 @@
     "axios": "^0.27.2",
     "discord-api-types": "^0.32.1",
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "init": "^0.1.2",
-    "tsc": "^2.0.4"
+    "dotenv": "^16.0.1",
+    "init": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
-    "npm-run-all": "^4.1.5",
-    "nodemon": "^2.0.16",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
-    "typescript": "^4.7.3",
-    "eslint": "^8.15.0"
+    "typescript": "^4.7.3"
   }
 }
